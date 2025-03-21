@@ -51,7 +51,7 @@
               </li>
               <li>
                 <button class="dropdown-item" id="copy-email">
-                  Copiar Correo
+                  Copiar
                 </button>
               </li>
             </ul>
@@ -143,7 +143,7 @@
 
     // 2) Petición a la API de NewsAPI (10 artículos de ciencia)
     const apiKey = "7ba52c711cca420b962c16a1538d2a40"; 
-    const url = `https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=${apiKey}&pageSize=10`;
+    const url = `https://newsapi.org/v2/top-headlines?category=science&apiKey=${apiKey}&language=en&pageSize=10`;
 
     window.addEventListener("DOMContentLoaded", () => {
       fetch(url)
